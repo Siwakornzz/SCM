@@ -33,6 +33,9 @@ class Calculate:
             else:
                 total = 0
             total = self.salary + total
-        if total < 12000:
-            total = 12000
+            
+        if (self.salary < 15000 and self.monthsell > 100001):
+            total = total + 5000
+        
         return total
+
